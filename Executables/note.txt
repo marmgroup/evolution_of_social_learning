@@ -1,0 +1,2 @@
+To execute in linux: run ./program example_Parameters.json
+To execute in windows: in commande line run SL_model_cleaned.exe example_Parameters.json
