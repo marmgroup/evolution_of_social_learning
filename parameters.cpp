@@ -1,0 +1,43 @@
+#include "parameters.h"
+
+void from_json(const nlohmann::json& j, parameters& t)
+{
+	NLOHMANN_JSON_FROM(seed);
+	NLOHMANN_JSON_FROM(init_w_range);
+	NLOHMANN_JSON_FROM(init_lr_range);
+	NLOHMANN_JSON_FROM(init_le_mean);
+	NLOHMANN_JSON_FROM(init_prop_sl);
+	NLOHMANN_JSON_FROM(mut_rate_w);
+	NLOHMANN_JSON_FROM(mut_step_w);
+	NLOHMANN_JSON_FROM(lr_homogenous);
+	NLOHMANN_JSON_FROM(mut_rate_lr);
+	NLOHMANN_JSON_FROM(mut_step_lr);
+	NLOHMANN_JSON_FROM(le_homogenous);
+	NLOHMANN_JSON_FROM(mut_rate_le);
+	NLOHMANN_JSON_FROM(mut_step_le);
+	NLOHMANN_JSON_FROM(mut_rate_sl);
+	NLOHMANN_JSON_FROM(mut_step_sl);
+	NLOHMANN_JSON_FROM(N);
+	NLOHMANN_JSON_FROM(G);
+	NLOHMANN_JSON_FROM(lifespan);
+	NLOHMANN_JSON_FROM(extrapolate_from);
+	NLOHMANN_JSON_FROM(nr_replicates);
+	NLOHMANN_JSON_FROM(env_sample_size);
+	NLOHMANN_JSON_FROM(env_range);
+	NLOHMANN_JSON_FROM(init_mean_env);
+	NLOHMANN_JSON_FROM(sd_env);
+	NLOHMANN_JSON_FROM(env_change);
+	NLOHMANN_JSON_FROM(env_change_sd);
+	NLOHMANN_JSON_FROM(env_change_type);
+	NLOHMANN_JSON_FROM(env_change_rate);
+	NLOHMANN_JSON_FROM(SL_type);
+	NLOHMANN_JSON_FROM(IL_type);
+	NLOHMANN_JSON_FROM(cue_type);
+	NLOHMANN_JSON_FROM(sl_homogenous);
+	NLOHMANN_JSON_FROM(one_social_parent);
+	NLOHMANN_JSON_FROM(success_bias);
+	NLOHMANN_JSON_FROM(sl_speed);
+	NLOHMANN_JSON_FROM(mut_rate_schedule);
+	NLOHMANN_JSON_FROM(differential_learning_rates);
+	NLOHMANN_JSON_FROM(schedule_init);
+}
